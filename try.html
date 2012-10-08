@@ -1,0 +1,241 @@
+<html>
+	<head>
+		<title> FINCA : Bienes Raíces : </title>
+		<script type="text/javascript" src="jquery/jquery-1.4.2.min.js"></script>
+
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script>
+		<script src="coolcarousel/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function() {
+				
+				$('#carousel span').append('<img src="coolcarousel/img/gui/carousel_glare.png" class="glare" />');
+				$('#thumbs a').append('<img src="coolcarousel/img/gui/carousel_glare_small.png" class="glare" />');
+
+				$('#carousel').carouFredSel({
+					responsive: true,
+					circular: false,
+					auto: false,
+					items: {
+						visible: 1,
+						width: 200,
+						height: '56%'
+					},
+					scroll: {
+						fx: 'directscroll'
+					}
+				});
+
+				$('#thumbs').carouFredSel({
+					responsive: true,
+					circular: false,
+					infinite: false,
+					auto: false,
+					prev: '#prev',
+					next: '#next',
+					items: {
+						visible: {
+							min: 2,
+							max: 6
+						},
+						width: 150,
+						height: '66%'
+					}
+				});
+
+				$('#thumbs a').click(function() {
+					$('#carousel').trigger('slideTo', '#' + this.href.split('#').pop() );
+					$('#thumbs a').removeClass('selected');
+					$(this).addClass('selected');
+					return false;
+				});
+
+			});
+		</script>
+		<style type="text/css">
+			#wrapperi {
+				position: absolute;
+				width: 500px;
+				left: 25%;
+				top: 50px;
+			}
+			#carousel-wrapper {
+				padding-bottom: 10px;
+				position: relative;
+			}
+			#carousel, #thumbs {
+				overflow: hidden;
+			}
+			#carousel-wrapper .caroufredsel_wrapper {
+				border-radius: 10px;
+				box-shadow: 0 0 5px #899;
+			}
+
+			#carousel span, #carousel img,
+			#thumbs a, #thumbs img  {
+				display: block;
+				float: left;
+			}
+			#carousel span, #carousel a,
+			#thumbs span, #thumbs a {
+				position: relative;
+			}
+			#carousel img,
+			#thumbs img {
+				border: none;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+			#carousel img.glare,
+			#thumbs img.glare {
+				width: 102%;
+				height: auto;
+			}
+
+			#carousel span {
+				width: 431px;
+				height: 324px;
+			}
+
+			#thumbs-wrapper {
+				padding: 20px 40px;
+				position: relative;
+			}
+			#thumbs a {
+				border: 2px solid #899;
+				width: 150px;
+				height: 100px;
+				margin: 0 10px;
+				overflow: hidden;
+				border-radius: 10px;
+				
+				-webkit-transition: border-color .5s;
+				-moz-transition: border-color .5s;
+				-ms-transition: border-color .5s;
+				transition: border-color .5s;
+			}
+			#thumbs a:hover, #thumbs a.selected {
+				border-color: #566;
+			}
+			
+			#wrapper img#shadow {
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+			}
+
+			#prev, #next {
+				background: transparent url('img/gui/carousel_nav.png') no-repeat 0 0;
+				display: block;
+				width: 19px;
+				height: 20px;
+				margin-top: -10px;
+				position: absolute;
+				top: 50%;
+			}
+			#prev {
+				background-position: 0 0;
+				left: 10px;
+			}
+			#next {
+				background-position: -19px 0;
+				right: 10px;
+			}			
+			#prev:hover { 
+				background-position: 0 -20px;				
+			}
+			#next:hover {
+				background-position: -19px -20px;				
+			}
+			#prev.disabled, #next.disabled {
+				display: none !important;
+			}
+			
+					</style>
+	</head>
+<body>
+<div id="header">
+		<center><a href="/index.html"><img src="Logo%20Finca/Finca_logo.jpg" alt="Finca_logo" width="150" height="65" id="logo" /></a></center>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href=""> Propiedades </a></li>
+		<li><a href="">Servicios</a></li>
+		<li><a href=""> Promotores</a></li>
+		<li><a href=""> Contactenos</a></li>
+		<li><a href=""> Quienes Somos</a></li>
+	</ul>
+</div>
+<br>
+<br>
+<div id="opciones">
+<br />
+<h6>Home>Propiedades</h6>
+
+
+	<!--fotos de la galeria -->
+<table>
+<tr>
+<td>
+
+<div id="wrapperi">
+			<div id="carousel-wrapper">
+				<img id="shadow" src="coolcarousel/img/gui/carousel_shadow.png" />
+				<div id="carousel">
+					<span id="pixar"><img src="coolcarousel/img/large/pixar.jpg" /></span>
+					<span id="bugs"><img src="coolcarousel/img/large/bugs.jpg" /></span>
+					<span id="cars"><img src="coolcarousel/img/large/cars.jpg" /></span>
+					<span id="incred"><img src="coolcarousel/img/large/incred.jpg" /></span>
+					<span id="monsters"><img src="coolcarousel/img/large/monsters.jpg" /></span>
+					<span id="nemo"><img src="coolcarousel/img/large/nemo.jpg" /></span>
+					<span id="rat"><img src="coolcarousel/img/large/rat.jpg" /></span>
+					<span id="toystory"><img src="coolcarousel/img/large/toystory.jpg" /></span>
+					<span id="up"><img src="coolcarousel/img/large/up.jpg" /></span>
+					<span id="walle"><img src="coolcarousel/img/large/walle.jpg" /></span>
+				</div>
+			</div>
+			<div id="thumbs-wrapper">
+				<div id="thumbs">
+					<a href="#pixar" class="selected"><img src="coolcarousel/img/small/pixar.jpg" /></a>
+					<a href="#bugs"><img src="coolcarousel/img/small/bugs.jpg" /></a>
+					<a href="#cars"><img src="coolcarousel/img/small/cars.jpg" /></a>
+					<a href="#incred"><img src="coolcarousel/img/small/incred.jpg" /></a>
+					<a href="#monsters"><img src="coolcarousel/img/small/monsters.jpg" /></a>
+					<a href="#nemo"><img src="coolcarousel/img/small/nemo.jpg" /></a>
+					<a href="#rat"><img src="coolcarousel/img/small/rat.jpg" /></a>
+					<a href="#toystory"><img src="coolcarousel/img/small/toystory.jpg"  /></a>
+					<a href="#up"><img src="coolcarousel/img/small/up.jpg" /></a>
+					<a href="#walle"><img src="coolcarousel/img/small/walle.jpg" /></a>
+				</div>
+				<a id="prev" href="#"></a>
+				<a id="next" href="#"></a>
+			</div>
+		</div>
+
+</td>
+<td id="infocasa" valign="top" height="520"> 
+<p> Especificaciones de la casa </p>
+<b><p> CASA EN VENTA: </p></b>
+<b><p> UBICACION:</p></b>
+<b><p> DIRECCION:</p></b>
+<b><p> ENTRE CALLES:</p></b>
+<b><p> COLONIA:</p></b>
+<b><p> MUNICIPIO:</p></b>
+<b><p> REFERENCIA: </p></b>
+<BR />
+<BR />
+				
+</td>
+</tr>
+</table>
+<p></p>
+<p></p>
+</div>
+
+
+</body>

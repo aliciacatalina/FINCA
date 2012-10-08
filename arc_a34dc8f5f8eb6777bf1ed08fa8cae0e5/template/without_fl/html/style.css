@@ -1,0 +1,110 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.footer {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+}
+a.footer {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+a.footer:hover {
+
+
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #4F4F4F;
+	text-decoration: underline;
+}
+.text {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-weight: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+}
+input {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+}
+select {
+
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+}
+option {
+
+
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	font-weight: normal;
+	color: #4F4F4F;
+	text-decoration: none;
+}
+.unsubscribe {
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #658B00;
+	text-decoration: none;
+}
+a.unsubscribe {
+
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #658B00;
+	text-decoration: none;
+}
+a.unsubscribe:hover {
+
+
+	font-family: Tahoma;
+	font-size: 11px;
+	color: #658B00;
+	text-decoration: underline;
+}
+.text2 {
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #006EBB;
+	text-decoration: none;
+}
+a.text2 {
+
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #006EBB;
+	text-decoration: none;
+}
+a.text2:hover {
+
+
+	font-family: Tahoma;
+	font-size: 11px;
+	font-style: normal;
+	color: #006EBB;
+	text-decoration: underline;
+}

@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title> FINCA : Bienes Raíces : </title>
+	</head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<body>
+<div id="header">
+	<center><img src="Logo%20Finca/Finca_logo.jpg" alt="Finca_logo" width="150" height="65" id="logo" /></center>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href=""> Propiedades </a></li>
+		<li><a href="file:///Volumes/Macintosh%20HD/Users/aliciagonzalez21/Desktop/FINCA/servicios.html">Servicios</a></li>
+		<li><a href=""> Promotores</a></li>
+		<li><a href="contacto.html"> Contactenos</a></li>
+		<li><a href="file:///Volumes/Macintosh%20HD/Users/aliciagonzalez21/Desktop/FINCA/quienessomos.html"> Quienes Somos</a></li>
+	</ul>
+</div>
+<br />
+<br />
+<div id="opciones">
+<br />
+<br />
+<h1>Contactenos</h1>
+<br />
+<br />
+<table id="contacto">
+	<tr>
+		<td> <center>Para mayor información envie los siguientes datos<br /> y nos pondremos en contacto.</center>
+		<br>
+		<br>
+		</td>
+	</tr>
+	<tr>
+		<td>
+	<form method="post" action="http://www.finca.com/formmail.php" name="SampleForm">
+    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+
+    <!-- STEP 2: Put your email address in the 'recipients' value.
+                 Note that you also have to allow this email address in the
+                 $TARGET_EMAIL setting within formmail.php!
+    -->
+    <input type="hidden" name="janorodriguez48@hotmail.com" value="you@your-host-name.com" />
+
+    <!-- STEP 3: Specify required fields in the 'required' value - or leave unchanged.
+            NOTE: DO NOT put your email address and name here.
+            "Your email address" and "Your name" are error messages for your users to see,
+            not placeholders for you to replace.
+    -->
+    <input type="hidden" name="required" value="EmailAddr:Your email address,FullName:Your name" />
+
+    <!-- STEP 4: Put your subject line in the 'subject' value. -->
+    <input type="hidden" name="Contacto de FINCA" value="Sample FormMail Testing" />
+
+    <!-- ALL DONE! Visit our site for HOW TO guides and more complex features. -->
+
+    <!-- this derives (creates) "email" and "realname" special fields from the input fields -->
+    <input type="hidden" name="derive_fields" value="email=EmailAddr,realname=FullName" />
+
+    <!-- this excludes the "email" and "realname" special fields from the body of the email you receive -->
+    <input type="hidden" name="mail_options" value="Exclude=email;realname" />
+    	Nombre:  <input type="text" name="nombre" size="30"/>
+		<br>
+		<br>
+		E-Mail:  <input type="text" name="mail" />
+		<br>
+		<br>
+		Telefono:<input type="text" name="tel" />
+		<br>
+		<br>
+	  Comentarios:
+		<br>
+		<textarea rows="10" cols="20"></textarea>
+		<br>
+		<br>
+		<input type="reset" name="Reset" value="Borrar" id="Borrar" valign="right"/>
+		<input type="SUBMIT" name="Submit" value="Enviar" id="Enviar" align="right"/>
+	</form>
+		</td>
+	</tr>
+	
+</table>
+

@@ -1,0 +1,444 @@
+/*
+Alicia Gonzalez .July 17/2012.
+Project: FINCA
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: underline;
+	color: #0F8C8C;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+
+
+/*body {
+	font-size: 11.5pt;
+	font-family: Tahoma;
+	color: #5C5B5B;
+	line-height: 1.75em;
+	background: #E0DCDC url(images/img01.gif) repeat-x top left;
+}*/
+
+body {
+	font-family: Neutra_Text_Book;
+}
+
+strong {
+	color: #2C2B2B;
+}
+
+br.clearfix {
+	clear: both;
+}
+
+h1,h2,h3 {
+	font-weight: normal;
+	letter-spacing: -1px;
+	font-family: Neutra_Text_Book;
+}
+
+h1{
+	margin-left: 2em;
+	font-family: Neutra_Text_Bold;
+}
+
+h2 {
+	font-size: 2.25em;
+}
+
+h2,h3 {
+	color: #2C2B2B;
+}
+
+h3 {
+	font-size: 1.75em;
+	margin-left: 3em;
+}
+
+h4 {
+	font-size: small;
+	margin-right: 1.5em;
+	font-family: Neutra_Text_Book;
+}
+
+h6{
+	font-family: Neutra_Text_Book;
+	font-size: small;
+	color: #29AAE2;
+	margin-left: 1em;
+}
+
+p {
+	/*margin-bottom: 1.5em;*/
+	font-family: Neutra_Text_Book;
+	margin-left: 3em;
+	line-height: 200%
+}
+
+ul {
+	margin-bottom: 1.5em;
+	
+}
+
+#lista{
+	margin-left: 3em;
+	font-family: Neutra_Text_Book;
+}
+
+ul h4 {
+	margin-bottom: 0.35em;
+}
+
+.box {
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+
+.date {
+	background: #6E6E6E;
+	padding: 5px 6px 5px 6px;
+	margin: 0 6px 0 0;
+	color: #FFFFFF;
+	font-size: 0.8em;
+	border-radius: 2px;
+}
+
+#content {
+	width: 665px;
+	float: left;
+	padding: 0;
+}
+
+#content-box1 {
+	width: 320px;
+	float: left;
+}
+
+#content-box2 {
+	margin: 0 0 0 345px;
+	width: 320px;
+}
+
+#footer {
+	margin: 40px 0 120px 0;
+	text-align: center;
+	color: #8C8B8B;
+	text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#footer a {
+	color: #8C8B8B;
+}
+
+#header {
+	height: 50px;
+	position: relative;
+	padding: 45px;
+	width: 888px;
+	/*border: solid 1px #7E7E7E;*/
+	/*border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	overflow: hidden;*/
+}
+
+#logo {
+	/*line-height: 160px;
+	height: 160px;
+	padding: 5px 0 0 0;*/
+	position: center;
+	top: auto;
+}
+
+
+#menu {
+	padding: 0 45px 0 45px;
+	position: relative;
+	background: #E6E6E6 url(images/img02.gif) repeat-x top left;
+	margin: 0;
+	height: 60px;
+	width: 1200px;
+}
+
+#menu ul {
+	list-style: none;
+	padding-top: 12px;
+	position: relative;
+	left: -15px;
+	
+}
+
+#menu ul li {
+	padding: 15px 15px 5px 15px;
+	margin-left: 100px;
+	display: inline-block;
+	color: #29AAE2; 
+	font-family: Neutra_Text_Book;
+}
+
+#menu ul li a, #menu ul li span {
+	text-decoration: none;
+	color: #5db8f8;
+	letter-spacing: -1px;
+	font-size: 1.25em;
+}
+
+#menu ul li span b {
+	display: inline-block;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 7px solid #1C7575;
+	margin-left: 8px;
+	position: relative;
+	top: -1px;
+}
+
+#menu ul li.active {
+	background: #1C7575;
+	border-top: solid 1px #1A6B6B;
+	border-bottom: solid 1px #5AD7D7;
+	border-radius: 3px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#menu ul li.active span b {
+	border-top-color: #165E5E;
+}
+
+
+#page {
+	padding: 45px 45px 15px 45px;
+	position: relative;
+	width: 890px;
+	margin: 0;
+}
+
+#page .section-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+#page .section-list li {
+	clear: both;
+	padding: 30px 0 30px 0;
+}
+
+#page ul {
+	list-style: none;
+}
+
+#page ul li {
+	border-top: dotted 1px #C4C4C4;
+	padding: 15px 0 15px 0;
+}
+
+#page ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#page-bottom {
+	position: relative;
+	margin: 0;
+	background: #6E6E6E url(images/img03.jpg) top left no-repeat;
+	border: solid 1px #7E7E7E;
+	width: 888px;
+	padding: 45px 45px 0 45px;
+	color: #DCDCDC;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	text-shadow: 0 1px 1px #444444;
+}
+
+#page-bottom a {
+	color: #F5F5F5;
+}
+
+#page-bottom h2, #page-bottom h3, #page-bottom h4 {
+	color: #FFFFFF;
+}
+
+#page-bottom ul {
+	list-style: none;
+}
+
+#page-bottom ul li {
+	border-top: dotted 1px #8F8F8F;
+	padding: 15px 0 15px 0;
+}
+
+#page-bottom ul li.first {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#page-bottom-content {
+	width: 665px;
+	float: left;
+}
+
+#page-bottom-sidebar {
+	width: 200px;
+	margin: 0 0 0 690px;
+}
+
+#search input.form-submit {
+	margin-left: 1em;
+	color: #FFFFFF;
+	padding: 10px;
+	background: #2FACAC;
+	border: 0;
+}
+
+#search input.form-text {
+	border: solid 1px #8F8F8F;
+	padding: 10px;
+}
+
+#sidebar {
+	width: 200px;
+	padding: 0;
+	margin: 0 0 0 690px;
+}
+
+#slider {
+	position: relative;
+	margin: 45px 45px 0px 45px;
+	width: 890px;
+}
+
+#slider .viewer {
+	width: 890px;
+	height: 250px;
+	border: solid 1px #D4D4D4;
+	border-radius: 3px;
+}
+
+#slider .slide {
+	width: 890px;
+	height: 250px;
+	padding: 10px;
+}
+
+#slider .indicator {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 20px 0 0 0;
+}
+
+#slider .indicator span {
+	display: inline-block;
+	text-indent: -9999em;
+	width: 12px;
+	height: 12px;
+	background: #E3DFDF;
+	border-radius: 6px;
+	margin: 0 2px 0 2px;
+}
+
+#slider .indicator span.active {
+	background: #6E6E6E;
+}
+
+#wrapper {
+	position: relative;
+	width: 980px;
+	margin: 75px auto 0 auto;
+	background: #FFFFFF;
+	border-radius: 6px;
+	box-shadow: 0px 5px 20px 2px rgba(0,0,0,0.1);
+}
+
+#opciones{
+	width:890px;
+	height: 890px;
+	background-color:#E6E6E6;
+	margin-left: 190px;
+	
+}
+
+@font-face {
+	font-family: Neutra_Text_Bold;
+	src:url('NeutraText-Bold.otf')
+	
+	}
+	
+@font-face {
+	font-family: Neutra_Text_Book;
+	src:url('NeutraText-Book.otf')
+	
+	}
+#primeratabla {
+	position: relative;
+	font-family: Neutra_Text_Book;	
+}
+
+#primeratabla tr{
+	padding: 0px;
+	
+}
+#primeratabla td{
+	padding: 7px 0px 62px 30px;
+}
+
+img {
+	padding: 20px;
+}
+
+#vermas {
+	margin: 0px 0px 0px 90px
+}
+
+#contacto{
+	font-family: Neutra_Text_Book;
+	border-right-color:black;
+	border-right: 5px solid black;
+	margin-left: 3em;
+	padding: 0px 50px 0px 0px
+}
+
+#Enviar {
+	background-color: #25b2f3;
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	font-family: Neutra_Text_Book;
+	font-size: larger;
+	border: 0px solid black;
+	color: white;
+}
+
+#Borrar{
+	width: 100px;
+	height: 40px;
+	border-radius: 10px;
+	font-family: Neutra_Text_Book;
+	font-size: large;
+	border: 0px solid black;
+	background-color:#E6E6E6; 
+	color: #29AAE2;
+}
+
+#tablapromotores {
+	position: relative;
+	font-family: Neutra_Text_Book;	
+}
+
+#tablapromotores tr{
+	padding: 0px 100px 0px 0px;
+	
+}
+#tablapromotores td{
+	padding: 7px 100px 62px 30px;
+}
+#infocasa td{
+	vertical-align: top;
+}
