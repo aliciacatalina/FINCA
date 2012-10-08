@@ -6,14 +6,13 @@
 		<style type="text/css">
 @import "gallery.css";
 </style>
-	</head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
 </script>
-
+<script src="jquery/jcarousellite_1.0.1.js">
 </script>
-
+</head>
 <body>
 <div id="header">
 		<center><a href="/index.html"><img src="Logo%20Finca/Finca_logo.jpg" alt="Finca_logo" width="150" height="65" id="logo" /></a></center>
@@ -38,12 +37,15 @@
 <table>
 <tr>
 <td>
-<div id="main">
-				
+<div class="carouselbox">
+<div class="inner">
+	<button class="prev"></button>
+	<button class="next"></button>
 <div id="gallery-wrapper">
-	<div id="gallery"> 
+	<div id="gallery">
 	<img class="output" src="Fotos%20Casas/Casa%20Balcones%20del%20Valle/Balcones%20del%20valle%20%208.jpg" alt="Balcones%20del%20valle%20%208" width="320" height="240" />
 		<div id="thumbnail-bg">
+		<div class="carousel">
 			<center>
 
 				<ul class="thumbnails">

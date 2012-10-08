@@ -442,3 +442,9 @@ img {
 #infocasa td{
 	vertical-align: top;
 }
+
+.thumbnails ul{
+	display: block; 
+	overflow-x: scroll; 
+	white-space: nowrap;
+}

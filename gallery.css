@@ -33,6 +33,7 @@ margin-bottom: 6px;
 	overflow-x: hidden;
 }
 
+/*
 #gallery ul.thumbnails
 {
 	width: 100%;
@@ -42,6 +43,12 @@ margin-bottom: 6px;
 	padding: 0 0 0 5px;
 	overflow: scroll;
 	display: inline-block;
+}
+*/
+#gallery ul.thumbnails{
+	display: block; 
+	overflow-x: scroll; 
+	white-space: nowrap;
 }
 
 #gallery ul.thumbnails li
